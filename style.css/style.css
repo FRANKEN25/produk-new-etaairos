@@ -1,0 +1,165 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.produk {
+    background-color: #fff;
+    padding: 40px 0;
+}
+.produk-item {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.produk-item a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    text-align: center;
+}
+
+.produk-item:hover {
+    transform: scale(1.05);
+}
+
+.produk-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produk-item h3 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.produk-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #007bff;
+}
+
+.produk-item a:active {
+    background-color: #28a745;
+    color: white;
+}
+
+
+.tentang {
+    background-color: #f9f9f9;
+}
+
+.kontak ul {
+    list-style: none;
+    padding: 0;
+}
+
+.kontak ul li {
+    margin: 10px 0;
+}
+
+.kontak ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .produk-item {
+        width: 100%;
+    }
+}
+
+
+/* sambutan */
+
+.sambutan {
+    background-color: #ebebeb;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sambutan button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.sambutan button:hover {
+    background-color: #d32f2f;
+}
